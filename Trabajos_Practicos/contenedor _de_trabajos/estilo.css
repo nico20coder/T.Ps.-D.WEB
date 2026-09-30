@@ -13,19 +13,13 @@
     /*--tamanio-L:16px;
     --grosor-L:300;
     --letra-C: black;*/
-
 }
-
-
-
-
 
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family:Georgia, 'Times New Roman', Times, serif;
-
 }
 
 body{
@@ -33,8 +27,9 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #89f5e5;
-    padding: 0 25px;
+    /*padding: 0 25px;*/
+    background-image: url(ChatGPT\ Image\ 21\ sept\ 2026\,\ 08_07_06\ p.m..png);
+    background-size: cover;
 }
 .contenedor{
     width: 85%;
