@@ -1,0 +1,183 @@
+*{
+    /*width: 0%;
+    height: 0%;*/
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    /*width: 100%;
+    height: 100%;*/
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    /*display: grid;*/
+}
+
+ /*===================
+  <<CUERPO COMPLETO>>
+  ===================*/
+.container{
+    width: 70%;
+    height: 78dvh;
+    /*min-height: 350px;*/
+    margin: 30px auto;
+    
+    border-radius: 30px;
+    background-color: #eb7979;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    
+    grid-template-areas: 
+        "navbar  navbar"
+        "cuerpo1 cuerpo2";
+    
+    /*align-items: center;*/
+    overflow: hidden;
+    /*background-color:#dce5ff;*/
+    /*padding: 65%;*/
+}
+
+ /*============
+  <<NAVBAR>>
+  ============*/
+.navbar-container{
+    /*width: 100%;*/
+    grid-area: navbar;
+    display: flex;        
+    border-radius: auto 15px;          
+    /*font-family: 'Poppins', sans-serif;
+    background-color: #f4f5f7;*/
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 20px 50px;             
+    background-color: #ffffff;     
+    /*border-bottom: 1px solid #eaeaea;*/
+}
+.logo {
+  font-size: 1.5rem;   
+  font-weight: 800;    
+  letter-spacing: 1px; 
+  display: flex;       
+  align-items: center; 
+  gap: 10px;           
+  color: #111;         
+}
+
+/* Estilo específico para el ícono dentro del logo */
+.logo i {
+  font-size: 1.3rem;   
+  color: #000000;      
+}
+
+/* 4. SECCIÓN DE ENLACES (.nav-links) */
+.nav-links {
+  display: flex;         align-items: center; /* Centrar verticalmente los links */
+  gap: 35px;           /* Espacio uniforme de separación entre cada enlace */
+}
+
+/* Estilos base para todos los enlaces del menú */
+.nav-links a {
+  text-decoration: none; /* Elimina la línea de subrayado por defecto de los links */
+  color: #333;           /* Color gris oscuro para los textos del menú */
+  font-weight: 500;      /* Grosor semi-negrita (SemiBold) */
+  font-size: 13px;     /* Tamaño de letra ligeramente menor al cuerpo principal */
+  /*transition: color 0.3s ease; /* Transición suave cuando cambie de color al pasar el cursor */
+}
+
+/* Efecto hover (cuando pasas el mouse por encima de los links comunes) */
+.nav-links a:hover {
+  color: #e6b800; /* Cambia a un tono amarillo/dorado corporativo */
+}
+
+/* 5. USO DE :last-child PARA EL BOTÓN "SIGN UP"*/
+/* 
+  Selecciona específicamente al ÚLTIMO elemento hijo dentro de .nav-links 
+  (que en este caso es la etiqueta <a href="#signup">SIGN UP</a>) 
+  para transformarlo visualmente en un botón sólido sin necesidad de clases adicionales.
+*/
+.nav-links a:last-child {
+  background-color: #000000;    /* Fondo negro sólido */
+  color: #ffffff;               /* Texto en color blanco para hacer contraste */
+  padding: 10px 25px;           /* Espaciado interno para darle forma de botón rectangular */
+  border-radius: 6px;           /* Bordes redondeados sutiles */
+ /* transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover específico para el botón final */
+.nav-links a:last-child:hover {
+  background-color: #333333;    /* El fondo negro se aclara un poco al pasar el mouse */
+  color: #ffffff;               /* Asegura que el texto se mantenga blanco */
+}
+
+
+ /*================
+  <<CUERPO 1>>
+==================*/  
+.cjp{
+    padding: 50px;
+    display: flex;
+    grid-area: cuerpo1;
+    flex-direction: column;
+    justify-content: center;
+}
+/*TITULO*/
+.cjp h1{
+    font-size: 60px;
+    line-height: 0.90;
+    font-weight: 900;
+    color: #212529;
+}
+
+.resalt-lets{
+    display: inline-block;
+    background-color: #f8f9fa;
+    padding: 0 05px;
+    /*transform: rotate(5deg);*/
+}
+
+.resalt-unique{
+    display: inline-block;
+    background-color: #ffd60a;
+    padding: 0 05px;
+    /*transform: rotate(5deg);*/
+    /*flex-direction: column;*/
+}
+
+.cjp p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.cjp button{
+    align-self: flex-start;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #212529;
+    color: #f8f9fa;
+    
+}
+
+ /*=============
+   SEGUNDA CARA
+ ===============*/
+.caraB{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/chica.web.png");
+    /*background-image: url("https://tse2.mm.bing.net/th/id/OIP.El2akHcvYOl-jQc-LbLWcQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");*/
+    background-repeat: no-repeat;
+    /*display: block;*/
+    background-size: cover;
+    background-position: center;
+    grid-area: cuerpo2;
+
+    /*align-self: flex-start;*/
+}
