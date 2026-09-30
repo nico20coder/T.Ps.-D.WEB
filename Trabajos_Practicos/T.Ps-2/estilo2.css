@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra-negra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 13px;
+}
+
+/*LADO IZQUIERDO*/
+.tope-izquierdo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.primer-escrito{
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.segundo-escrito{
+    font-size: 12px;
+    color: #cccccc;
+}
+
+/*LADO DERECHO*/
+.tope-derecho{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.senal{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.divisor{
+    color: #555555;
+}
+
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px 30px;
+}
+
+/*LADO IZQUIERDO DEL NAVBAR*/
+.nav-izquierdo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/*CENTRO Del NAVBAR*/
+.nav-logo a{
+    text-decoration: none;
+    color: #e2001a;
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/*LADO DERECHO DEL NAVBAR*/
+.nav-derecho{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.acciones{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+

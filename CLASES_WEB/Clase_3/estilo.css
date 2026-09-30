@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.Contenedor{
+    
+    /*ancho que ocupa*/
+    width: 100%;
+    /*alto que ocupa*/
+    height: 100vh;
+    display: flex;
+    /*formatode orden*/
+    flex-direction: column;
+    /*donde se ubicara*/
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    font-weight: 800;
+    padding: 30px;
+    margin-top: 12px;
+}

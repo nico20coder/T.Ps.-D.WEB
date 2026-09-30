@@ -1,0 +1,10 @@
+body{
+    background-color: beige;
+}
+
+.Tarjet{
+    background-color: rgb(204, 166, 141);
+    border: solid #a88d8d 15px;
+    padding: 15px;
+    margin: 20px;
+}

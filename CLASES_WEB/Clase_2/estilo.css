@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(144, 227, 206)
+}
+
+.section-1{
+    background-color: rgb(74, 189, 21);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 30%;
+    height: 30%;
+    padding: 0 auto;
+    display: flex;
+    border: 5px  solid #487;
+    background-color: rgb(30, 162, 142);
+}
+
+.link{
+    font-size: 10px;
+    width: 50px;
+    display: flex;
+    gap: 5px;
+
+}

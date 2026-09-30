@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ /*--------------
+  PAGINA DISENIO
+  ---------------*/
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8e7a70;
+}
+
+ /*--------------------
+  CONTENEDOR PRINCIPAL
+ ----------------------*/
+.contenedor{
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    background-image: url(ChatGPT\ Image\ 21\ sept\ 2026\,\ 08_07_06\ p.m..png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+ /*--------
+   NAVBAR 
+ --------*/
+.navbar{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    overflow: hidden;
+    z-index: 10;
+    background-color: rgb(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255, 0.35);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.20);
+    
+}
+.boton-menu{
+    display: block;
+    padding: 18px 25px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+ /*----------
+  CHECKBOX
+ ------------*/
+ /*Llamados y Chekeos*/
+#menu{
+    display: none;
+}
+
+.opciones{
+    display: none;
+    flex-direction: column;
+}
+
+#menu:checked ~ .opciones{
+    display: flex;
+}
+.opciones a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+.opciones a:hover{
+    background-color: #eeeeee;
+}
