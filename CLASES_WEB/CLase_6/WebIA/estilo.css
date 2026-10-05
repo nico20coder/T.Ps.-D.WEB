@@ -1,3 +1,5 @@
+
+
 *{
     /*width: 0%;
     height: 0%;*/
@@ -47,34 +49,35 @@ body{
     /*width: 100%;*/
     grid-area: navbar;
     display: flex;        
-    border-radius: auto 15px;          
+    border-radius: auto 15px;          /* Activamos Flexbox para alinear los elementos horizontalmente */
     /*font-family: 'Poppins', sans-serif;
     background-color: #f4f5f7;*/
-    justify-content: space-between; 
-    align-items: center;            
-    padding: 20px 50px;             
-    background-color: #ffffff;     
+    justify-content: space-between; /* Separa los elementos extremos: logo a la izquierda, links a la derecha */
+    align-items: center;            /* Centra verticalmente todos los elementos del navbar */
+    padding: 20px 50px;             /* Espaciado interno superior/inferior (20px) y laterales (50px) */
+    background-color: #ffffff;      /* Fondo blanco puro para la barra */
     /*border-bottom: 1px solid #eaeaea;*/
 }
 .logo {
-  font-size: 1.5rem;   
-  font-weight: 800;    
-  letter-spacing: 1px; 
-  display: flex;       
-  align-items: center; 
-  gap: 10px;           
-  color: #111;         
+  font-size: 1.5rem;   /* Tamaño de fuente grande y destacado */
+  font-weight: 800;    /* Grosor alto (Bold) para darle fuerza visual */
+  letter-spacing: 1px; /* Espaciado ligero entre las letras */
+  display: flex;       /* Flexbox para alinear el ícono y el texto lado a lado */
+  align-items: center; /* Centrado vertical entre ícono y texto */
+  gap: 10px;           /* Espacio de separación entre el ícono de la bolsa y la palabra FASHION */
+  color: #111;         /* Color de texto casi negro */
 }
 
 /* Estilo específico para el ícono dentro del logo */
 .logo i {
-  font-size: 1.3rem;   
-  color: #000000;      
+  font-size: 1.3rem;   /* Ajuste de tamaño del ícono */
+  color: #000000;      /* Color negro para el ícono */
 }
 
 /* 4. SECCIÓN DE ENLACES (.nav-links) */
 .nav-links {
-  display: flex;         align-items: center; /* Centrar verticalmente los links */
+  display: flex;       /* Alinear los enlaces en una sola línea horizontal */
+  align-items: center; /* Centrar verticalmente los links */
   gap: 35px;           /* Espacio uniforme de separación entre cada enlace */
 }
 
@@ -171,7 +174,7 @@ body{
 .caraB{
     height: 100%;
     width: 100%;
-    background-image: url("../img/chica.web.png");
+    background-image: url(img/chica.png);
     /*background-image: url("https://tse2.mm.bing.net/th/id/OIP.El2akHcvYOl-jQc-LbLWcQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");*/
     background-repeat: no-repeat;
     /*display: block;*/
@@ -181,3 +184,11 @@ body{
 
     /*align-self: flex-start;*/
 }
+
+/*.imagen img{
+    
+    width: 50%;
+    height: 70vh;
+    
+    object-fit: contain;
+}*/

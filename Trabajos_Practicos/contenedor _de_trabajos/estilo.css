@@ -10,9 +10,9 @@
     /*ESPACIADO*/
     --espaciado-T:10px;
     /*TEXTO*/
-    /*--tamanio-L:16px;
+    --tamanio-L:16px;
     --grosor-L:300;
-    --letra-C: black;*/
+    --letra-C: black;
 }
 
 *{
@@ -70,6 +70,8 @@ body{
     text-decoration: none;
     color: rgb(32, 28, 28);
     font-size: var(--tamanio-L);
+    border: 2px solid white;
+    border-radius: 10px;
 }
 .retorno a img{
     width: 20px;
@@ -104,6 +106,7 @@ body{
     margin-bottom: 10px;
     background-image: url("https://i.pinimg.com/736x/af/6b/e7/af6be79a0485ee1c5c74c145dee765e4.jpg");
     background-size: cover;
+    transition: transform 0.3s ease;
 }
 .trabajo2 {
     width: var(--trabajo-T-A);
@@ -116,6 +119,7 @@ body{
     margin-bottom: 10px;
     background-image: url("https://i.pinimg.com/736x/de/ef/d8/deefd8b2102cccafe888b96e922053cd.jpg");
     background-size: cover;
+    transition: transform 0.3s ease;
 }
 .trabajo3 {
     width: var(--trabajo-T-A);
@@ -128,6 +132,7 @@ body{
     margin-bottom: 10px;
     background-image: url("https://imgs.search.brave.com/dYE0Icye0hTx6YRh0Oyd-VxggBRXV202q7K2Jx0Nqe4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXVsYWNyZWFjdGl2/YS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjYvMDMvZmxl/eC1ib3gud2VicA");
     background-size: cover;
+    transition: transform 0.3s ease;
 }
 .trabajo4 {
     width: var(--trabajo-T-A);
@@ -140,6 +145,7 @@ body{
     margin-bottom: 10px;
     background-image: url("https://imgs.search.brave.com/aS9wt4Nd2EvgtCQKZD6tewzDKR18tgXQXeIG6ciEjRs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJ1cGxvYWQv/MjkyNjc0ODgvZmls/ZS9vcmlnaW5hbC1h/NjliMjM0M2RjY2Ux/MjU2MWJiMWNkNWJh/ZTc5Mjg3My5wbmc_/Zm9ybWF0PXdlYnAm/cmVzaXplPTQwMHgz/MDAmdmVydGljYWw9/Y2VudGVy");
     background-size: cover;
+    transition: transform 0.3s ease;
 }
 .trabajo5 {
     width: var(--trabajo-T-A);
@@ -152,16 +158,31 @@ body{
     margin-bottom: 10px;
     background-image: url("https://imgs.search.brave.com/FimQOG51JjxLs-ElkwY2NHzKBm1op7c6Ph_nc7MT2mU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NTkwMjgwMTItNDgx/YzA0ZmE3MDJkP2Zt/PWpwZyZxPTYwJnc9/MzAwMCZhdXRvPWZv/cm1hdCZmaXQ9Y3Jv/cCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHpaV0Z5WTJoOE4z/eDhkMlZpSlRJd1pH/VnphV2R1ZkdWdWZE/QjhmREI4Zkh3dw");
     background-size: cover;
+    transition: transform 0.3s ease;
 }
+
+.trabajo1:hover, .trabajo2:hover, .trabajo3:hover, .trabajo4:hover, .trabajo5:hover {
+    transform: scale(1.7); /* Aumenta el tamaño al pasar el mouse */
+}
+
+
+
  /*---------
    ENLACES
   ----------*/
-.trabajo1 a{
+.trabajo1 a, .trabajo2 a, .trabajo3 a, .trabajo4 a, .trabajo5 a{
     color: white;
     text-decoration: none;
     font-size: var(--tamanio-L);
-    font-weight: var(--grosor-L);    
+    font-weight: var(--grosor-L);   
+    transition: color 0.3s ease; 
 }
+
+.trabajo1 a, .trabajo2 a, .trabajo3 a, .trabajo4 a, .trabajo5 a:hover {
+    color: solid orange ; /* Cambia a un tono amarillo/dorado corporativo */
+}
+
+/*
 .trabajo2 a{
     color: var(--letra-C);
     text-decoration: none;

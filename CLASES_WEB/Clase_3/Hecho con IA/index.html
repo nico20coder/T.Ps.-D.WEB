@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <main class="products-container">
+
+    <!-- <article>: Representa un bloque de contenido independiente y reutilizable (Tarjeta 1: Shoes) -->
+    <article class="card">
+      
+      <!-- <div>: Contenedor para la imagen del producto, ayuda a controlar su tamaño e interacciones -->
+      <div class="card-image">
+        <!-- <img>: Carga la imagen del producto. El atributo 'alt' describe la imagen para accesibilidad -->
+        <img src="https://via.placeholder.com/150" alt="Zapatillas azules de deporte">
+      </div>
+
+      <!-- <div>: Agrupa toda la información de texto y precios del producto -->
+      <div class="card-content">
+        <!-- <h2>: Título principal de la tarjeta que indica el nombre del producto -->
+        <h2 class="card-title">Shoes</h2>
+        
+        <!-- <p>: Párrafo de texto descriptivo breve sobre las características del producto -->
+        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+        <!-- <span>: Elemento en línea utilizado para resaltar y dar estilo único al precio -->
+        <span class="card-price">$100.00</span>
+        
+        <!-- <div>: Contenedor genérico para agrupar la calificación mediante estrellas -->
+        <div class="card-stars">
+          <!-- <span>: Representa cada estrella individualmente (amarilla o negra/gris según la puntuación) -->
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star inactive">★</span>
+        </div>
+      </div>
+
+      <!-- <button>: Botón interactivo sobre el cual el usuario hace clic para iniciar la compra -->
+      <button class="btn-buy btn-shoes">Buy Now</button>
+
+    </article>
+
+
+    <!-- TARJETA 2: Earphone -->
+    <article class="card">
+      <div class="card-image">
+        <img src="https://via.placeholder.com/150" alt="Auriculares inalámbricos azules">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Earphone</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="card-price">$40.00</span>
+        <div class="card-stars">
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star inactive">★</span>
+          <span class="star inactive">★</span>
+        </div>
+      </div>
+      <button class="btn-buy btn-earphone">Buy Now</button>
+    </article>
+
+
+    <!-- TARJETA 3: Watch -->
+    <article class="card">
+      <div class="card-image">
+        <img src="https://via.placeholder.com/150" alt="Reloj deportivo negro">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Watch</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="card-price">$70.84</span>
+        <div class="card-stars">
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star inactive">★</span>
+        </div>
+      </div>
+      <button class="btn-buy btn-watch">Buy Now</button>
+    </article>
+
+
+    <!-- TARJETA 4: Mobile -->
+    <article class="card">
+      <div class="card-image">
+        <img src="https://via.placeholder.com/150" alt="Teléfono inteligente blanco">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Mobile</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="card-price">$1000.84</span>
+        <div class="card-stars">
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+        </div>
+      </div>
+      <button class="btn-buy btn-mobile">Buy Now</button>
+    </article>
+
+  </main>
+
+</body>
+</html>
