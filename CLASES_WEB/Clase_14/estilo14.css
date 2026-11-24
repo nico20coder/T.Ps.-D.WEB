@@ -1,0 +1,39 @@
+.Disponible{
+    color: blue;
+} 
+.No_disponible{
+    color: solid  red;
+}
+
+
+*{
+    background-color: rgb(181, 244, 222);
+}
+
+.principal{
+    background-color: rgb(180, 179, 179);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px, ;
+
+}
+.card{
+    background-color: rgb(239, 228, 228);
+    border-radius: 17px;
+    margin-inline-start: 10px;
+}
+
+
+
+
+
+
+/*
+.aprobados{
+    color: green;
+}
+.desaprobado{
+    color: red;
+}*/

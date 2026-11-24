@@ -1,5 +1,5 @@
 let nombre = prompt ("Ingresar nombre:");
-let edad = Number( prompt("Ingresar edad:") );
+let edad = Number( prompt("Ingresar edad:") )
 
 if(edad >= 18){
     /*console.log("Aprovado, mayor :)");*/
