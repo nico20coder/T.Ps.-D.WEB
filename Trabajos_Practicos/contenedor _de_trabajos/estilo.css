@@ -162,7 +162,7 @@ body{
 }
 
 .trabajo1:hover, .trabajo2:hover, .trabajo3:hover, .trabajo4:hover, .trabajo5:hover {
-    transform: scale(1.7); /* Aumenta el tamaño al pasar el mouse */
+    transform: scale(1.4); /* Aumenta el tamaño al pasar el mouse */
 }
 
 

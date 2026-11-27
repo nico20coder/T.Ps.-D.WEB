@@ -40,7 +40,39 @@ body{
     transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
     overflow: hidden;
 }
-/*Animacion de posicionamiento de cursor*/
+
+/*boton  regreeso*/
+.navbar button{
+    background-color: #4f772d;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.navbar button:hover{
+    background-color: #6aa64f;
+    transform: scale(1.05);
+}
+.navbar button img{
+    /*text-decoration: none;*/
+    display: flex;
+    width: 30px;
+    height: 30px;
+    /*margin-bottom: 50px;*/
+    /*justify-content: center;
+    align-items: center;*/
+    border-radius: 2% 8px;
+    background-color: #4f772d;
+    /*background-image: url(folder_3917575.png);*/
+    background-size: cover;
+    object-fit: cover;
+    border: #4f772d;
+
+}
+
+
+/*Animacion de flecha*/
 .Box:hover{
     box-shadow: 18px 12px 12px #308b4b;
     transform: translatey(-5px);

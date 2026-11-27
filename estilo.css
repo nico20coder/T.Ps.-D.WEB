@@ -1,90 +1,355 @@
-*{
+
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
- /*--------------
-  PAGINA DISENIO
-  ---------------*/
-body{
+body {
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-color: #8e7a70;
 }
 
- /*--------------------
-  CONTENEDOR PRINCIPAL
- ----------------------*/
-.contenedor{
+
+/* =================================
+   CONTENEDOR PRINCIPAL
+================================= */
+
+.contenedor {
     position: relative;
+
     width: 90%;
     max-width: 1200px;
     height: 80vh;
-    background-image: url(ChatGPT\ Image\ 21\ sept\ 2026\,\ 08_07_06\ p.m..png);
+
+    background-image: url("ChatGPT Image 21 sept 2026, 08_07_06 p.m..png");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     border-radius: 30px;
     overflow: hidden;
 }
 
- /*--------
-   NAVBAR 
- --------*/
-.navbar{
+
+/* =================================
+   MENÚ PRINCIPAL
+================================= */
+
+.navbar {
     position: absolute;
+
     top: 25px;
     left: 50%;
+
     transform: translateX(-50%);
-    width: 300px;
+
+    width: 90%;
+    max-width: 1100px;
+
     overflow: hidden;
     z-index: 10;
+
     background-color: rgb(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
+
     border: 1px solid rgb(255, 255, 255, 0.35);
     border-radius: 20px;
+
     box-shadow: 0 10px 30px rgb(0, 0, 0, 0.20);
-    
 }
-.boton-menu{
+
+
+/* =================================
+   BOTÓN MENU
+================================= */
+
+.boton-menu {
     display: block;
+
+    width: 100%;
     padding: 18px 25px;
+
     text-align: center;
     font-weight: bold;
+    font-size: 16px;
+
     cursor: pointer;
+
     background-color: transparent;
     color: white;
+
+    border: none;
 }
 
- /*----------
-  CHECKBOX
- ------------*/
- /*Llamados y Chekeos*/
-#menu{
-    display: none;
-}
 
-.opciones{
+/* =================================
+   OPCIONES DEL MENÚ
+================================= */
+
+.opciones {
     display: none;
     flex-direction: column;
 }
 
-#menu:checked ~ .opciones{
+.navbar.abierto .opciones {
     display: flex;
 }
-.opciones a{
+
+
+/* Enlaces generales */
+
+.opciones > a {
     display: block;
+
     padding: 15px 20px;
+
     text-decoration: none;
     color: white;
     text-align: center;
+
     transition: background-color 0.2s ease;
 }
-.opciones a:hover{
-    background-color: #eeeeee;
+
+.opciones > a:hover {
+    background-color: rgb(255, 255, 255, 0.20);
 }
 
+
+/* =================================
+   BOTÓN TRABAJOS PRÁCTICOS
+================================= */
+
+#boton-trabajos {
+    display: block;
+
+    width: 100%;
+    padding: 15px 20px;
+
+    background-color: transparent;
+    border: none;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#boton-trabajos:hover {
+    background-color: rgb(255, 255, 255, 0.20);
+}
+
+
+/* =================================
+   CONTENEDOR DE TARJETAS
+================================= */
+
+.trabajos-lista {
+    display: none;
+
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Mostrar las tarjetas */
+
+.grupo-trabajos.desplegado .trabajos-lista {
+    display: grid;
+}
+
+
+/* =================================
+   TARJETAS INDIVIDUALES
+================================= */
+
+.tarjeta-trabajo {
+    position: relative;
+
+    display: block;
+
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    border: 3px solid black;
+    border-radius: 18px;
+
+    text-decoration: none;
+    color: white;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Imagen de cada tarjeta */
+
+.tarjeta-trabajo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Título de cada tarjeta */
+
+.tarjeta-trabajo span {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 5px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+
+    background-color: rgb(0, 0, 0, 0.45);
+}
+
+
+/* =================================
+   EFECTOS HOVER
+================================= */
+
+.tarjeta-trabajo:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-trabajo:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =================================
+   DISEÑO PARA CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        width: 95%;
+    }
+
+    .trabajos-lista {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .tarjeta-trabajo span {
+        font-size: 13px;
+    }
+
+}
+
+
+/*
+:root{
+    /*TAMAÑOS
+    --trabajo-T-A: 250px;
+    --trabajo-T-L: 200px;
+
+    /*BORDES
+    --borde-G:3px solid black;
+    --radio-B:15px;
+
+    /*ESPACIADO
+    --espaciado-T:10px;
+    /*TEXTO
+    --tamanio-L:16px;
+    --grosor-L:300;
+    --letra-C: black;
+}
+
+.tarjetas-trabajos a {
+    width: var(--trabajo-T-A);
+    height: var(--trabajo-T-L);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radio-B);
+    border: var(--borde-G);
+    margin-bottom: 10px;
+    background-image: url("https://i.pinimg.com/736x/af/6b/e7/af6be79a0485ee1c5c74c145dee765e4.jpg");
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+/*
+.trabajo2 {
+    width: var(--trabajo-T-A);
+    height: var(--trabajo-T-L);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radio-B);
+    border: var(--borde-G);
+    margin-bottom: 10px;
+    background-image: url("https://i.pinimg.com/736x/de/ef/d8/deefd8b2102cccafe888b96e922053cd.jpg");
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+.trabajo3 {
+    width: var(--trabajo-T-A);
+    height: var(--trabajo-T-L);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radio-B);
+    border: var(--borde-G);
+    margin-bottom: 10px;
+    background-image: url("https://imgs.search.brave.com/dYE0Icye0hTx6YRh0Oyd-VxggBRXV202q7K2Jx0Nqe4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXVsYWNyZWFjdGl2/YS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjYvMDMvZmxl/eC1ib3gud2VicA");
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+.trabajo4 {
+    width: var(--trabajo-T-A);
+    height: var(--trabajo-T-L);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radio-B);
+    border: var(--borde-G);
+    margin-bottom: 10px;
+    background-image: url("https://imgs.search.brave.com/aS9wt4Nd2EvgtCQKZD6tewzDKR18tgXQXeIG6ciEjRs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJ1cGxvYWQv/MjkyNjc0ODgvZmls/ZS9vcmlnaW5hbC1h/NjliMjM0M2RjY2Ux/MjU2MWJiMWNkNWJh/ZTc5Mjg3My5wbmc_/Zm9ybWF0PXdlYnAm/cmVzaXplPTQwMHgz/MDAmdmVydGljYWw9/Y2VudGVy");
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+.trabajo5 {
+    width: var(--trabajo-T-A);
+    height: var(--trabajo-T-L);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radio-B);
+    border: var(--borde-G);
+    margin-bottom: 10px;
+    background-image: url("https://imgs.search.brave.com/FimQOG51JjxLs-ElkwY2NHzKBm1op7c6Ph_nc7MT2mU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NTkwMjgwMTItNDgx/YzA0ZmE3MDJkP2Zt/PWpwZyZxPTYwJnc9/MzAwMCZhdXRvPWZv/cm1hdCZmaXQ9Y3Jv/cCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHpaV0Z5WTJoOE4z/eDhkMlZpSlRJd1pH/VnphV2R1ZkdWdWZE/QjhmREI4Zkh3dw");
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.tarjetas-trabajos a:hover {
+    transform: scale(1.4); /* Aumenta el tamaño al pasar el mouse 
+
+*/

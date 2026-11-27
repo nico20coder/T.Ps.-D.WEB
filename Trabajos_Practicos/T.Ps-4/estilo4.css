@@ -37,12 +37,23 @@ body{
     /*justify-content: center;
     align-items: center;*/
     border-radius: 2% 8px;
-    background-color: #4f772d;
+    background-color: transparent;
     /*background-image: url(folder_3917575.png);*/
     background-size: cover;
     object-fit: cover;
-    border: #4f772d;
-
+    border: none;
+}
+.cabeza button{
+    background-color: #4f772d;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cabeza button:hover{
+    background-color: #6aa64f;
+    transform: scale(1.05);
 }
 
 .Navegacion{
@@ -81,11 +92,11 @@ body{
 .mitad{
     grid-area: aside;
     background-color: #90a955;
-    padding: 20px;
+   /* padding: 10px;*/
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    /*margin-top: 10px;
     /*background-position: center;*/
 }
 

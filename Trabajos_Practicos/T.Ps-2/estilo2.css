@@ -18,6 +18,37 @@ body{
     font-size: 13px;
 }
 
+/*boton  regreeso*/
+
+.tope-izquierdo button{
+    background-color: grey;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.tope-izquierdo button:hover{
+    background-color: rgb(181, 179, 179);
+    transform: scale(1.05);
+}
+
+.tope-izquierdo button img{
+    /*text-decoration: none;*/
+    display: flex;
+    width: 28px;
+    height: 28px;
+    /*margin-bottom: 50px;*/
+    /*justify-content: center;
+    align-items: center;*/
+    border-radius: 2% 8px;
+    background-color: transparent;
+    /*background-image: url(folder_3917575.png);*/
+    background-size: cover;
+    object-fit: cover;
+    border: #4f772d;
+}
+
 /*LADO IZQUIERDO*/
 .tope-izquierdo{
     display: flex;

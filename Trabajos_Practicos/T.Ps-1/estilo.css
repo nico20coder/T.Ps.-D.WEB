@@ -8,3 +8,33 @@ body{
     padding: 15px;
     margin: 20px;
 }
+
+/*boton  regreeso*/
+.button{
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover{
+    background-color: #80827f;
+    transform: scale(1.05);
+}
+.regreso img{
+    text-decoration: none;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    /*margin-bottom: 50px;*/
+    /*justify-content: center;
+    align-items: center;*/
+    border-radius: 2% 8px;
+    background-color: transparent;
+    /*background-image: url(folder_3917575.png);*/
+    background-size: cover;
+    object-fit: cover;
+    border: none;
+
+}
