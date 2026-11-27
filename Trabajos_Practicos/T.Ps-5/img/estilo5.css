@@ -7,37 +7,25 @@
 }
 
 body{
-    /*width: 100%;
-    height: 100%;*/
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
-    /*display: grid;*/
 }
 
- /*===================
-  <<CUERPO COMPLETO>>
-  ===================*/
+ /* CUERPO COMPLETO */
 .container{
     width: 70%;
     height: 78dvh;
-    /*min-height: 350px;*/
     margin: 30px auto;
-    
     border-radius: 30px;
     background-color: #eb7979;
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    
     grid-template-areas: 
         "navbar  navbar"
         "cuerpo1 cuerpo2";
     
-    /*align-items: center;*/
     overflow: hidden;
-    /*background-color:#dce5ff;*/
-    /*padding: 65%;*/
 }
 
  /*NAVBAR*/
@@ -101,7 +89,6 @@ body{
   color: #333;           
   font-weight: 500;      
   font-size: 13px;     
-  /*transition: color 0.3s ease; /* Transición suave cuando cambie de color al pasar el cursor */
 }
 
 
@@ -109,7 +96,7 @@ body{
   color: #e6b800; 
 }
 
-/* 5. USO DE :last-child PARA EL BOTÓN "SIGN UP"*/
+/* :last-child "SIGN UP"*/
 .nav-links a:last-child {
   background-color: #000000;    
   color: #ffffff;               
@@ -118,7 +105,7 @@ body{
  /* transition: background-color 0.3s ease;*/ 
 }
 
-/* Efecto hover específico para el botón final */
+/* Efecto boton final */
 .nav-links a:last-child:hover {
   background-color: #333333;    
   color: #ffffff;               
@@ -175,9 +162,7 @@ body{
     
 }
 
- /*=============
-   SEGUNDA CARA
- ===============*/
+ /*MITAD IMAGEN*/
 .caraB{
     height: 100%;
     width: 100%;
